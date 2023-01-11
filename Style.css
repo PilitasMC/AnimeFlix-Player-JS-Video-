@@ -1,0 +1,40 @@
+/*Valla no nombre para un contenedor si soy malisimo nombrando*/
+.eden{
+    width: 35%;
+}
+#my-video{ /*Video*/
+    width: 100%;
+    height: 17rem;
+}
+.btn-Container{ /*Contenedor de los botones para alinearlos*/
+    display: grid;grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    background-color: aqua;
+}
+.btn:hover{ /*Funcion del mouse over oh si*/
+    background-color: rgb(0, 196, 196);
+    color: white;
+    cursor: pointer;
+    
+}
+/*Alineacion del boton de play en verdad no me gusta que este a los lados*/
+.video-js{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.video-js .vjs-big-play-button{
+    top: auto;
+    left: auto;
+}
+/*Ya se que pude editar esto en Video.JS pero el codigo esta minificado asi que
+no queria ponerme a buscar en toda esas lineas hasta encontrar el .vjs-big-play-button
+Usted me entiende compa*/
